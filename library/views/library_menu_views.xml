@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Principal -->
+    <menuitem 
+        id="menu_library" 
+        name="Library" 
+        sequence="10"
+    />
+    
+    <!-- Acciones Asociadas -->
+    <record id="action_library_book" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_library_author" model="ir.actions.act_window">
+        <field name="name">Authors</field>
+        <field name="res_model">library.author</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_library_libraries" model="ir.actions.act_window">
+        <field name="name">Libraries</field>
+        <field name="res_model">library.libraries</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus Secundarios -->
+    <menuitem
+        id="menu_library_book"
+        name="Book"
+        parent="menu_library"
+        action="action_library_book"
+        sequence="20"
+    />
+
+    <menuitem
+        id="menu_library_author"
+        name="Authors"
+        parent="menu_library"
+        action="action_library_author"
+        sequence="30"
+    />
+
+    <menuitem
+        id="menu_library_libraries"
+        name="Libraries"
+        parent="menu_library"
+        action="action_library_libraries"
+        sequence="40"
+    />
+
+</odoo>
