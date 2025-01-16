@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="movie_1" model="movie">
+        <field name="name">Star Wars</field>
+        <field name="director">George Lucas</field>
+        <field name="release_date">1977-05-25</field>
+        <field name="duration">121</field>
+        <field name="gender">spaceopera</field>
+    </record>
+
+    <record id="movie_2" model="movie">
+        <field name="name">Liar Liar</field>
+        <field name="director">Tom Shadyac</field>
+        <field name="release_date">1997-05-15</field>
+        <field name="duration">86</field>
+        <field name="gender">comedy</field>
+    </record>
+
+</odoo>
