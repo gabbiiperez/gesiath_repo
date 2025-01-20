@@ -11,6 +11,6 @@
         "views/books_views.xml",
         "views/category_books_views.xml",
     ],
-    "installable": True,
+    "installable": True, 
     "application": True,
 }
