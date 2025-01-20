@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Principal -->
+    <menuitem 
+        id="menu_clase8" 
+        name="Clase 8" 
+        sequence="10"
+    />
+    
+    <!-- Acciones Asociadas -->
+    <record id="action_books" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">books</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_category_books" model="ir.actions.act_window">
+        <field name="name">Category of books</field>
+        <field name="res_model">category.books</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus Secundarios -->
+    <menuitem
+        id="menu_books"
+        name="Books"
+        parent="menu_clase8"
+        action="action_books"
+        sequence="20"
+    />
+
+    <menuitem
+        id="menu_category_books"
+        name="Category of books"
+        parent="menu_clase8"
+        action="action_category_books"
+        sequence="30"
+    />
+
+</odoo>

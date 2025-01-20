@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista de Formulario -->
+    <record id="category_books_view_form" model="ir.ui.view">
+        <field name="name">category.books.view.form</field>
+        <field name="model">category.books</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="book_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista de Lista -->
+    <record id="category_books_view_tree" model="ir.ui.view">
+        <field name="name">category.books.view.tree</field>
+        <field name="model">category.books</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

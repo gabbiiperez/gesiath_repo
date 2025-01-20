@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista de Formulario -->
+    <record id="books_view_form" model="ir.ui.view">
+        <field name="name">books.view.form</field>
+        <field name="model">books</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="author"/>
+                        <field name="price"/>
+                        <field name="category_id" options="{'no_create': True, 'no_create_edit': True}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Vista de Lista -->
+    <record id="books_view_tree" model="ir.ui.view">
+        <field name="name">books.view.tree</field>
+        <field name="model">books</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="author"/>
+                <field name="category_id"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
