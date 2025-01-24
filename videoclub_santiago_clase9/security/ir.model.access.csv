@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_movie,movie,model_movie,base.group_user,1,1,1,1
+access_category,category,model_category,base.group_user,1,1,1,1
+access_actor,actor,model_actor,base.group_user,1,1,1,1

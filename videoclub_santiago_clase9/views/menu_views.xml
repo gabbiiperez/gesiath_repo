@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Principal -->
+    <menuitem 
+        id="menu_videoclub" 
+        name="VideoClub Clase 9" 
+        sequence="10"
+    />
+    
+    <!-- Acciones Asociadas -->
+    <record id="action_movies" model="ir.actions.act_window">
+        <field name="name">Movies</field>
+        <field name="res_model">movie</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_category" model="ir.actions.act_window">
+        <field name="name">Category</field>
+        <field name="res_model">category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_actor" model="ir.actions.act_window">
+        <field name="name">Actor</field>
+        <field name="res_model">actor</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus Secundarios -->
+    <menuitem
+        id="menu_movie"
+        name="Movies"
+        parent="menu_videoclub"
+        action="action_movies"
+        sequence="20"
+    />
+
+    <menuitem
+        id="menu_category"
+        name="Categories"
+        parent="menu_videoclub"
+        action="action_category"
+        sequence="30"
+    />
+
+    <menuitem
+        id="menu_actor"
+        name="Actors"
+        parent="menu_videoclub"
+        action="action_actor"
+        sequence="40"
+    />
+
+</odoo>
