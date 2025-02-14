@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Principal -->
+    <menuitem 
+        id="menu_veterinary_clinic" 
+        name="Veterinary clinic" 
+        sequence="10"
+    />
+    
+    <!-- Acciones Asociadas -->
+        <record id="action_pets" model="ir.actions.act_window">
+        <field name="name">Pets</field>
+        <field name="res_model">vet.clinic.pet</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_appointments" model="ir.actions.act_window">
+        <field name="name">Appointments</field>
+        <field name="res_model">vet.clinic.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus Secundarios -->
+    <menuitem
+        id="menu_pets"
+        name="Pets"
+        parent="menu_veterinary_clinic"
+        action="action_pets"
+        sequence="20"
+    />
+
+    <menuitem
+        id="menu_appointment"
+        name="Appointments"
+        parent="menu_veterinary_clinic"
+        action="action_appointments"
+        sequence="30"
+    />
+</odoo>

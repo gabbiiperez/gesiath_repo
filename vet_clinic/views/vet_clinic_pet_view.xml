@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="vet_clinic_pet_view_form" model="ir.ui.view">
+        <field name="name">vet.clinic.pet.view.form</field>
+        <field name="model">vet.clinic.pet</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="owner_id"/>
+                        <field name="age"/>
+                        <field name="species"/>
+                        <field name="age_category" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="vet_clinic_pet_view_tree" model="ir.ui.view">
+        <field name="name">vet.clinic.pet.view.tree</field>
+        <field name="model">vet.clinic.pet</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="owner_id"/>
+                <field name="species"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
