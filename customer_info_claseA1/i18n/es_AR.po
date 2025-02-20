@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* customer_info_claseA1
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-20 22:52+0000\n"
+"PO-Revision-Date: 2025-02-20 22:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields,field_description:customer_info_claseA1.field_res_partner__age
+#: model:ir.model.fields,field_description:customer_info_claseA1.field_res_users__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: customer_info_claseA1
+#: model_terms:ir.ui.view,arch_db:customer_info_claseA1.res_partner_view_form_customer_info_classa1
+msgid "Age of partner"
+msgstr "Edad del cliente"
+
+#. module: customer_info_claseA1
+#: model:ir.model,name:customer_info_claseA1.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields,field_description:customer_info_claseA1.field_res_partner__description
+#: model:ir.model.fields,field_description:customer_info_claseA1.field_res_users__description
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields.selection,name:customer_info_claseA1.selection__res_partner__gender__female
+msgid "Female"
+msgstr "Mujer"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields,field_description:customer_info_claseA1.field_res_partner__gender
+#: model:ir.model.fields,field_description:customer_info_claseA1.field_res_users__gender
+msgid "Gender"
+msgstr "Genero"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields.selection,name:customer_info_claseA1.selection__res_partner__gender__nochoiche
+msgid "I prefer no to say"
+msgstr "Prefiero no decir"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields.selection,name:customer_info_claseA1.selection__res_partner__gender__male
+msgid "Male"
+msgstr "Hombre"
+
+#. module: customer_info_claseA1
+#: model:ir.model.fields.selection,name:customer_info_claseA1.selection__res_partner__gender__nonbinary
+msgid "Non binary"
+msgstr "No binarie"
