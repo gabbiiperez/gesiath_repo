@@ -1,0 +1,208 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* library_class_A1_HW
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-20 23:16+0000\n"
+"PO-Revision-Date: 2025-02-20 23:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: library_class_A1_HW
+#: model:ir.model,name:library_class_A1_HW.model_library_book
+msgid "A book from the library"
+msgstr "Un libro de la biblioteca"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__address
+msgid "Address"
+msgstr "Direccion"
+
+#. module: library_class_A1_HW
+#: model:ir.model,name:library_class_A1_HW.model_library_author
+msgid "An author from a book"
+msgstr "Autor de un libro"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__author
+msgid "Author"
+msgstr "Autor"
+
+#. module: library_class_A1_HW
+#: model:ir.actions.act_window,name:library_class_A1_HW.action_library_author
+#: model:ir.ui.menu,name:library_class_A1_HW.menu_library_author
+msgid "Authors"
+msgstr "Autores"
+
+#. module: library_class_A1_HW
+#: model:ir.ui.menu,name:library_class_A1_HW.menu_library_book
+msgid "Book"
+msgstr "Libro"
+
+#. module: library_class_A1_HW
+#: model:ir.actions.act_window,name:library_class_A1_HW.action_library_book
+msgid "Books"
+msgstr "Libros"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__category
+msgid "Category"
+msgstr "Categoria"
+
+#. module: library_class_A1_HW
+#: model:ir.actions.act_window,name:library_class_A1_HW.action_course
+#: model:ir.ui.menu,name:library_class_A1_HW.course_menu
+msgid "Course"
+msgstr "Curso"
+
+#. module: library_class_A1_HW
+#: model_terms:ir.ui.view,arch_db:library_class_A1_HW.course_view_form
+msgid "Create new"
+msgstr "Crear nuevo"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__create_uid
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__create_uid
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__create_uid
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__create_date
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__create_date
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__create_date
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__description
+msgid "Description of the course"
+msgstr "Descripcion del curso"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__display_name
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__display_name
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__display_name
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__duration
+msgid "Duration of the course"
+msgstr "Duracion del curso"
+
+#. module: library_class_A1_HW
+#: model_terms:ir.ui.view,arch_db:library_class_A1_HW.course_view_form
+msgid "Eliminate"
+msgstr "Eliminar"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields.selection,name:library_class_A1_HW.selection__library_book__category__fiction
+msgid "Fiction"
+msgstr "Ficcion"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields.selection,name:library_class_A1_HW.selection__library_book__category__history
+msgid "History"
+msgstr "Historia"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__id
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__id
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__id
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__id
+msgid "ID"
+msgstr "ID"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__write_uid
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__write_uid
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__write_uid
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__write_uid
+msgid "Last Updated by"
+msgstr "Ultima vez actualizado por"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__write_date
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__write_date
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__write_date
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__write_date
+msgid "Last Updated on"
+msgstr "Ultima vez acutalizado en"
+
+#. module: library_class_A1_HW
+#: model:ir.actions.act_window,name:library_class_A1_HW.action_library_libraries
+#: model:ir.ui.menu,name:library_class_A1_HW.menu_library_libraries
+msgid "Libraries"
+msgstr "Bibliotecas"
+
+#. module: library_class_A1_HW
+#: model:ir.model,name:library_class_A1_HW.model_library_libraries
+msgid "Libraries on town"
+msgstr "Bibliotecas en la ciudad"
+
+#. module: library_class_A1_HW
+#: model:ir.ui.menu,name:library_class_A1_HW.menu_library
+msgid "Library"
+msgstr "Biblioteca"
+
+#. module: library_class_A1_HW
+#: model_terms:ir.ui.view,arch_db:library_class_A1_HW.course_view_form
+msgid "Modify"
+msgstr "Modificar"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_course__name
+msgid "Name of the course"
+msgstr "Nombre del curso"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__pages
+msgid "Number of pages"
+msgstr "Numero de paginas"
+
+#. module: library_class_A1_HW
+#: model:ir.model,name:library_class_A1_HW.model_course
+msgid "Odoo's Course"
+msgstr "Curso de Odoo"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_libraries__phone
+msgid "Phone"
+msgstr "Telefono"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__publication_date
+msgid "Publication date"
+msgstr "Fecha de publicacion"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields.selection,name:library_class_A1_HW.selection__library_book__category__science
+msgid "Science"
+msgstr "Ciencia"
+
+#. module: library_class_A1_HW
+#: model_terms:ir.ui.view,arch_db:library_class_A1_HW.course_view_form
+msgid "Search"
+msgstr "Busqueda"
+
+#. module: library_class_A1_HW
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_author__name
+#: model:ir.model.fields,field_description:library_class_A1_HW.field_library_book__name
+msgid "Title"
+msgstr "Titulo"
