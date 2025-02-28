@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_view_form_customer_info" model="ir.ui.view">
+        <field name="name">product.template.view.form.customer.info</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='categ_id']" position="after">
+                <field name="works" string="Works"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_view_tree_product_info" model="ir.ui.view">
+        <field name="name">product.template.view.tree.product.info</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                    <button name="%(action_report_product_template)d" type="action" string="Print report" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

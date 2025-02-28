@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_template_report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <div class="page"> 
+                    <h2 class="titlec14" style="text-align: center;">Products report</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Product name:</th>
+                                <th>Category:</th>
+                                <th>Quantity:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="product">
+                                <tr>
+                                    <td t-out="product.name"/>
+                                    <td t-out="product.categ_id.name or '-'"/>
+                                    <td t-out="product.qty_available or '-'"/>
+                                </tr> 
+                            </t>
+                        </tbody>
+                    </table> 
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_report_product_template" model="ir.actions.report">
+        <field name="name">Report</field>
+        <field name="model">product.template</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">customer_info_clase14.product_template_report</field>
+        <field name="print_report_name">'Report - %s' % (object.name)</field>
+    </record>
+</odoo>

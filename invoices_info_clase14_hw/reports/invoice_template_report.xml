@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="invoice_template_report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <div class="page"> 
+                    <h2 class="titlec14" style="text-align: center;">Invoices report</h2>
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>                                                          
+                                <th>Invoice number:</th>
+                                <th>Client:</th>
+                                <th>Total:</th>                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="invoice">
+                                <tr t-if="invoice.amount_total > 1000" t-attf-style="background-color: lime;">
+                                    <td t-out="invoice.name"/>
+                                    <td t-out="invoice.invoice_partner_display_name or '-'"/>
+                                    <td t-out="invoice.amount_total_signed or '-'"/>
+                                </tr>    
+                            </t>
+                        </tbody>
+                    </table> 
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_report_invoice" model="ir.actions.report">
+        <field name="name">Report</field>
+        <field name="model">account.move</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">invoices_info_clase14_hw.invoice_template_report</field>
+        <field name="print_report_name">'Report - %s' % (object.name)</field>
+    </record>
+</odoo>
