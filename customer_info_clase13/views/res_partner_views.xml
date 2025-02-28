@@ -17,8 +17,10 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_tree"/>
         <field name="arch" type="xml">
-            <xpath expr="//tree" position="inside">
-                <button name="%(action_report_res_partner)d" type="action" string="Print report" class="oe_highlight"/>
+            <xpath expr="//tree/*[1]" position="before">
+                <header>
+                    <button name="%(action_report_res_partner)d" type="action" string="Print report" class="oe_highlight"/>
+                </header>
             </xpath>
         </field>
     </record>
