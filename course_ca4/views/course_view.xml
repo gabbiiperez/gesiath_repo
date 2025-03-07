@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="course_view_form_course_ca4" model="ir.ui.view">
+        <field name="name">course.view.form.course.ca4</field>
+        <field name="model">course</field>
+        <field name="inherit_id" ref="library.course_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="date_start"/>
+            </xpath>
+            <xpath expr="//button[@name='create_course']" position="attributes">
+                <attribute name="class" value="btn btn-secondary"/>
+            </xpath>
+        </field>
+    </record>
+    
+    <record id="course_view_tree_course_ca4" model="ir.ui.view">
+        <field name="name">course.view.tree.course.ca4</field>
+        <field name="model">course</field>
+        <field name="inherit_id" ref="library.course_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="date_start"/>
+            </xpath>
+            <xpath expr="//field[@name='description']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
