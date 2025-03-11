@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu Principal -->
+    <menuitem 
+        id="menu_transport_management_ca6" 
+        name="Transport Management" 
+        sequence="10"
+    />
+    
+    <!-- Acciones Asociadas -->
+    <record id="action_transport_shipment" model="ir.actions.act_window">
+        <field name="name">Transport Shipment</field>
+        <field name="res_model">transport.shipment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus Secundarios -->
+    <menuitem
+        id="menu_transport_shipment"
+        name="Transport Shipment"
+        parent="menu_transport_management_ca6"
+        action="action_transport_shipment"
+        sequence="20"
+    />
+</odoo>
